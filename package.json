@@ -31,7 +31,7 @@
     "hashring": "3.2.x",
     "request": "2.21.x",
     "semver": "1.1.x",
-    "leverage": "0.0.x"
+    "leverage": "0.1.x"
   },
   "devDependencies": {
     "chai": "1.6.x",
