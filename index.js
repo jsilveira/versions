@@ -351,8 +351,8 @@ Versions.prototype.write = function write(req, res, data) {
 
   res.setHeader('Expires', new Date(Date.now() + age).toUTCString());
   res.setHeader('Cache-Control', 'max-age='+ age +', public');
-  res.setHeader('Last-Modified', data['last-modified']);
-  res.setHeader('Content-Type', data['content-type']);
+  res.setHeader('Last-Modified', data['last-modified'] || "");
+  res.setHeader('Content-Type', data['content-type'] || "");
   res.setHeader('Content-Length', body.length);
 
   res.end(body);
